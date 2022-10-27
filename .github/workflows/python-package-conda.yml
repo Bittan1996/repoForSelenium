@@ -22,4 +22,5 @@ jobs:
 
     - name: Test with pytest
       run: |
-        behave
+        behave examples/directory_structure/login_negative.feature
+        
