@@ -8,6 +8,7 @@ def before_all(context):
     options.headless = True
 
     driver = webdriver.Chrome(ChromeDriverManager(cache_valid_range=1).install(), options=options,)
+    driver.implicitly_wait(20)
     context.browser = driver
     context.browser.maximize_window()
     print('before_all')
